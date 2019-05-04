@@ -48,7 +48,7 @@ function mobile_atom_blocks_05_esnext_register_block() {
 		filemtime( plugin_dir_path( __FILE__ ) . 'style.css' )
 	);
 
-	register_block_type( 'mobile-atom-blocks/example-05-recipe-card-esnext', array(
+	register_block_type( 'mobile-atom-blocks/example-05-tutorial-card-esnext', array(
 		'style' => 'mobile-atom-blocks-05-esnext',
 		'editor_script' => 'mobile-atom-blocks-05-esnext',
 	) );
