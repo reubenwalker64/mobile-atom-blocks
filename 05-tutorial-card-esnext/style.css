@@ -2,7 +2,7 @@
  * Note that these styles are loaded *before* editor styles, so that
  * editor-specific styles using the same selectors will take precedence.
  */
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext .tutorial-image {
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext .tutorial-image {
 	background: #f1f1f1;
 	float: right;
 	width: 50%;
@@ -10,32 +10,32 @@
 	text-align: center;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext .tutorial-image button {
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext .tutorial-image button {
 	margin-top: 30px;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext .tutorial-image button.image-button {
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext .tutorial-image button.image-button {
 	margin: 0;
 	padding: 0;
 	display: block;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext .tutorial-image img {
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext .tutorial-image img {
 	display: block;
 	z-index: 1;
 	position: relative;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext h2 {
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext h2 {
 	font-size: 1.5em;
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext ul {
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext ul {
 	padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
 }
 
-.wp-block-gutenberg-examples-example-05-recipe-card-esnext:after { 
-	content:""; 
-	clear:both; 
-	display: table; 
+.wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext:after {
+	content:"";
+	clear:both;
+	display: table;
 }

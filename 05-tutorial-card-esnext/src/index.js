@@ -8,8 +8,8 @@ const {
 } = wp.editor;
 const { Button } = wp.components;
 
-registerBlockType( 'gutenberg-examples/example-05-recipe-card-esnext', {
-	title: __( 'Tutorial Card (esnext)', 'gutenberg-examples' ),
+registerBlockType( 'mobile-atom-blocks/example-05-tutorial-card-esnext', {
+	title: __( 'Tutorial Card (esnext)', 'mobile-atom-blocks' ),
 	icon: 'index-card',
 	category: 'layout',
 	attributes: {
@@ -72,7 +72,7 @@ registerBlockType( 'gutenberg-examples/example-05-recipe-card-esnext', {
 			<div className={ className }>
 				<RichText
 					tagName="h2"
-					placeholder={ __( 'Write Tutorial title…', 'gutenberg-examples' ) }
+					placeholder={ __( 'Write Tutorial title…', 'mobile-atom-blocks' ) }
 					value={ title }
 					onChange={ onChangeTitle }
 				/>
@@ -83,26 +83,26 @@ registerBlockType( 'gutenberg-examples/example-05-recipe-card-esnext', {
 						value={ mediaID }
 						render={ ( { open } ) => (
 							<Button className={ mediaID ? 'image-button' : 'button button-large' } onClick={ open }>
-								{ ! mediaID ? __( 'Upload Image', 'gutenberg-examples' ) : <img src={ mediaURL } alt={ __( 'Upload Tutorial Image', 'gutenberg-examples' ) } /> }
+								{ ! mediaID ? __( 'Upload Image', 'mobile-atom-blocks' ) : <img src={ mediaURL } alt={ __( 'Upload Tutorial Image', 'mobile-atom-blocks' ) } /> }
 							</Button>
 						) }
 					/>
 				</div>
-				<h3>{ __( 'Sections', 'gutenberg-examples' ) }</h3>
+				<h3>{ __( 'Sections', 'mobile-atom-blocks' ) }</h3>
 				<RichText
 					tagName="ul"
 					multiline="li"
-					placeholder={ __( 'Write a list of sections…', 'gutenberg-examples' ) }
+					placeholder={ __( 'Write a list of sections…', 'mobile-atom-blocks' ) }
 					value={ sections }
 					onChange={ onChangeSections }
 					className="sections"
 				/>
-				<h3>{ __( 'Instructions', 'gutenberg-examples' ) }</h3>
+				<h3>{ __( 'Instructions', 'mobile-atom-blocks' ) }</h3>
 				<RichText
 					tagName="div"
 					multiline="p"
 					className="steps"
-					placeholder={ __( 'Write the instructions…', 'gutenberg-examples' ) }
+					placeholder={ __( 'Write the instructions…', 'mobile-atom-blocks' ) }
 					value={ instructions }
 					onChange={ onChangeInstructions }
 				/>
@@ -125,7 +125,7 @@ registerBlockType( 'gutenberg-examples/example-05-recipe-card-esnext', {
 
 				{
 					mediaURL && (
-						<img className="tutorial-image" src={ mediaURL } alt={ __( 'Tutorial Image', 'gutenberg-examples' ) } />
+						<img className="tutorial-image" src={ mediaURL } alt={ __( 'Tutorial Image', 'mobile-atom-blocks' ) } />
 					)
 				}
 
