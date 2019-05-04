@@ -2,12 +2,12 @@
 
 /**
  * Plugin Name: Mobile Atom Blocks
- * Plugin URI: https://github.com/WordPress/gutenberg-examples
- * Description: This is a plugin demonstrating how to register new blocks for the Gutenberg editor.
- * Version: 1.0.2
- * Author: the Gutenberg Team
+ * Plugin URI: https://github.com/reubenwalker64/mobile-atom-blocks
+ * Description: Mobile Atom Code's Gutenberg Blocks.
+ * Version: 1.0.0
+ * Author: Mobile Atom Code
  *
- * @package gutenberg-examples
+ * @package mobile-atom-blocks
  */
 
 defined( 'ABSPATH' ) || exit;
