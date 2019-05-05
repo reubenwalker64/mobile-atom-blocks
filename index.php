@@ -12,5 +12,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
+include '04-author-card/index.php';
 include '05-recipe-card/index.php';
 include '05-tutorial-card-esnext/index.php';

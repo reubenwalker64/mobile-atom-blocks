@@ -10,7 +10,7 @@ const { Button } = wp.components;
 
 registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 	title: __( 'Author Card (esnext)', 'mobile-atom-blocks' ),
-	icon: 'user',
+	icon: 'index-card',
 	category: 'layout',
 	attributes: {
 		title: {
@@ -82,7 +82,7 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 						allowedTypes="image"
 						value={ mediaID }
 						render={ ( { open } ) => (
-							<Button className={ mediaID ? 'image-button' : 'button button-large' } onClick={ open }>
+							<Button className={ mediaID ? 'image-button' : 'button button-small' } onClick={ open }>
 								{ ! mediaID ? __( 'Upload Image', 'mobile-atom-blocks' ) : <img src={ mediaURL } alt={ __( 'Upload Author Image', 'mobile-atom-blocks' ) } /> }
 							</Button>
 						) }
@@ -90,9 +90,9 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 				</div>
 				<h3>{ __( 'Credentials', 'mobile-atom-blocks' ) }</h3>
 				<RichText
-					tagName="ul"
-					multiline="li"
-					placeholder={ __( 'Write a list of credentials…', 'mobile-atom-blocks' ) }
+					tagName="div"
+					multiline="p"
+					placeholder={ __( 'Write the credentials…', 'mobile-atom-blocks' ) }
 					value={ credentials }
 					onChange={ onChangeCredentials }
 					className="credentials"
@@ -125,11 +125,11 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 
 				{
 					mediaURL && (
-						<img className="author-image" src={ mediaURL } alt={ __( 'author Image', 'mobile-atom-blocks' ) } />
+						<img className="author-image" src={ mediaURL } alt={ __( 'Author Image', 'mobile-atom-blocks' ) } />
 					)
 				}
 
-				<RichText.Content tagName="h2" className="credentials" value={ credentials } />
+				<RichText.Content tagName="div" className="credentials" value={ credentials } />
 
 				<RichText.Content tagName="div" className="steps" value={ bio } />
 			</div>

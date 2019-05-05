@@ -5,7 +5,8 @@
 .wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image {
 	background: #f1f1f1;
 	float: right;
-	width: 50%;
+	margin-left: 20px;
+	width: 25%;
 	min-height: 100px;
 	text-align: center;
 }
@@ -27,10 +28,10 @@
 }
 
 .wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image h2 {
-	font-size: 1.3em;
+	font-size: 1.7em;
 }
 
-.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image {
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext ul {
 	padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
 }
 
