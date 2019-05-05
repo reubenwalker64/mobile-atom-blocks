@@ -1,0 +1,41 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image {
+	background: #f1f1f1;
+	float: right;
+	width: 50%;
+	min-height: 100px;
+	text-align: center;
+}
+
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image button {
+	margin-top: 30px;
+}
+
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image button.image-button {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image img {
+	display: block;
+	z-index: 1;
+	position: relative;
+}
+
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image h2 {
+	font-size: 1.3em;
+}
+
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image {
+	padding-left: 2.5em !important; /* Needs fix in Gutenberg. */
+}
+
+.wp-block-mobile-atom-blocks-example-04-author-card-esnext:after {
+	content:"";
+	clear:both;
+	display: table;
+}
