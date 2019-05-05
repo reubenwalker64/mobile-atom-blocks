@@ -27,12 +27,12 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 			selector: 'img',
 			attribute: 'src',
 		},
-		sections: {
+		credentials: {
 			type: 'array',
 			source: 'children',
-			selector: '.sections',
+			selector: '.credentials',
 		},
-		instructions: {
+		bio: {
 			type: 'array',
 			source: 'children',
 			selector: '.steps',
@@ -45,8 +45,8 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 				title,
 				mediaID,
 				mediaURL,
-				sections,
-				instructions,
+				credentials,
+				bio,
 			},
 			setAttributes,
 		} = props;
@@ -60,12 +60,12 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 				mediaID: media.id,
 			} );
 		};
-		const onChangeSections = ( value ) => {
-			setAttributes( { sections: value } );
+		const onChangeCredentials = ( value ) => {
+			setAttributes( { credentials: value } );
 		};
 
-		const onChangeInstructions = ( value ) => {
-			setAttributes( { instructions: value } );
+		const onChangeBio = ( value ) => {
+			setAttributes( { bio: value } );
 		};
 
 		return (
@@ -88,23 +88,23 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 						) }
 					/>
 				</div>
-				<h3>{ __( 'Sections', 'mobile-atom-blocks' ) }</h3>
+				<h3>{ __( 'Credentials', 'mobile-atom-blocks' ) }</h3>
 				<RichText
 					tagName="ul"
 					multiline="li"
-					placeholder={ __( 'Write a list of sections…', 'mobile-atom-blocks' ) }
-					value={ sections }
-					onChange={ onChangeSections }
-					className="sections"
+					placeholder={ __( 'Write a list of credentials…', 'mobile-atom-blocks' ) }
+					value={ credentials }
+					onChange={ onChangeCredentials }
+					className="credentials"
 				/>
-				<h3>{ __( 'Instructions', 'mobile-atom-blocks' ) }</h3>
+				<h3>{ __( 'Bio', 'mobile-atom-blocks' ) }</h3>
 				<RichText
 					tagName="div"
 					multiline="p"
 					className="steps"
-					placeholder={ __( 'Write the instructions…', 'mobile-atom-blocks' ) }
-					value={ instructions }
-					onChange={ onChangeInstructions }
+					placeholder={ __( 'Write the bio…', 'mobile-atom-blocks' ) }
+					value={ bio }
+					onChange={ onChangeBio }
 				/>
 			</div>
 		);
@@ -115,8 +115,8 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 			attributes: {
 				title,
 				mediaURL,
-				sections,
-				instructions,
+				credentials,
+				bio,
 			},
 		} = props;
 		return (
@@ -129,9 +129,9 @@ registerBlockType( 'mobile-atom-blocks/example-04-author-card-esnext', {
 					)
 				}
 
-				<RichText.Content tagName="h2" className="sections" value={ sections } />
+				<RichText.Content tagName="h2" className="credentials" value={ credentials } />
 
-				<RichText.Content tagName="div" className="steps" value={ instructions } />
+				<RichText.Content tagName="div" className="steps" value={ bio } />
 			</div>
 		);
 	},
