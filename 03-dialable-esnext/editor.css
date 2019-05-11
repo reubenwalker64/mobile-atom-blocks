@@ -1,0 +1,10 @@
+/**
+ * Note that these styles are loaded *after* common styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-mobile-atom-blocks-example-03-dialable-esnext {
+	color: #000;
+	background: #fff;
+	border: 2px solid #fff;
+	padding: 20px;
+}

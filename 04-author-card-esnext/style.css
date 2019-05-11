@@ -3,7 +3,7 @@
  * editor-specific styles using the same selectors will take precedence.
  */
 .wp-block-mobile-atom-blocks-example-04-author-card-esnext .author-image {
-	background: #f1f1f1;
+	background: #fff;
 	float: right;
 	width: 25%;
 	min-height: 100px;

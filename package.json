@@ -14,11 +14,10 @@
 	"scripts": {
 		"lint-js": "eslint .",
 		"lint-js:fix": "eslint . --fix",
-		"build": "npm run build:01-basic && npm run build:03-editable && npm run build:04-controls && npm run build:05-recipe",
-		"build:01-basic": "cd 01-basic-esnext && npm run build",
-		"build:03-editable": "cd 03-editable-esnext && npm run build",
-		"build:04-controls": "cd 04-controls-esnext && npm run build",
-		"build:05-recipe": "cd 05-recipe-card-esnext && npm run build"
+		"build": "npm run build:03-dialable && npm run build:04-author-card && npm run build:05-tutorial-card",
+		"build:03-dialable": "cd 03-dialable-esnext && npm run build",
+		"build:04-author-card": "cd 04-author-card-esnext && npm run build",
+		"build:05-tutorial-card": "cd 05-tutorial-card-esnext && npm run build"
 	},
 	"devDependencies": {
 		"eslint": "^5.2.0",

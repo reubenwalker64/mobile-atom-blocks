@@ -3,7 +3,7 @@
  * editor-specific styles using the same selectors will take precedence.
  */
 .wp-block-mobile-atom-blocks-example-05-tutorial-card-esnext .tutorial-image {
-	background: #f1f1f1;
+	background: #fff;
 	float: right;
 	width: 50%;
 	min-height: 100px;
