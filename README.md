@@ -2,11 +2,6 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/1039236/47116000-fd775000-d27d-11e8-9c46-761a90cb30a2.gif" alt="Demo"></p>
 
-
-Examples for extending
-[Gutenberg](https://github.com/WordPress/gutenberg)
-with plugins which create blocks.
-
 See also:
 [Gutenberg developer documentation](https://wordpress.org/gutenberg/handbook/)
 
