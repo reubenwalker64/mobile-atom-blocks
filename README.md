@@ -9,8 +9,7 @@ See also:
 
 Mobile Atom Blocks are distributed as WordPress plugin.
 
-1. [Download a pre-built zip archive of the latest release](https://github.com/reubenwalker64/mobile-atom-blocks).
-   > Do not download from the "Clone or download" GitHub button, as this includes the source material only. Read the [Development](#development) instructions below if you’re interested in building your own copy of the plugin.
+1. [Download a pre-built zip archive of the latest release](https://github.com/reubenwalker64/mobile-atom-blocks) via the clone or download button.
 2. Navigate to the __Plugins > Add new__ screen in your WordPress administrative dashboard.
 3. Click __Add New__ at the top of the page.
 3. Click __Upload Plugin__ at the top of the page.
